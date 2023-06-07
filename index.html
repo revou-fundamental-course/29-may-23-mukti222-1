@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>
+        Home Page
+    </title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>    
+    .div1{
+text-align: center;
+color: aliceblue;
+font-size: 200%;
+height: 90vh; background-color: rgb(255, 255, 255); margin: 0px; margin-top: -35px;
+margin-right: -3px;
+background-image:url(img/gal.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
     
+
+    /* @media only screen and (max-width: 600px)
+    {    } */
+    </style>
+    <script src="js/skrip.js"></script>
+</head>
+
+<body style="background-color: rgb(18, 142, 142) ;"> 
+    <header>
+        <div style="">
+            <img class="logo" src="img/logo.jpg" alt="logo">
+        </div>
+        <div style="width: 80%; background-color: rgb(16, 149, 149);">
+            <ul>
+                <li style="border-radius: 5px 0px 0px 5px;"><a href="">Home</a></li>
+                <li ><a href="profile.html">Our Profile</a></li>
+                <li >Portofolio</li>
+                <li style="border-radius: 0px 5px 5px 0px;">Message Us</li>
+            </ul>
+        </div>
+    </header>
+
+    <main >
+        <div class="div1" >
+            
+        <h2>Hi <span id="name1">       </span>, Welcome to Website</h2>
+            <script>
+                var name1 = prompt("masukan nama");
+                document.getElementById("name1").innerText=name1;
+            </script>
+            
+        <H4>Ini adalah contoh Latihan web saya 🙏</H4>
+        </div>
+        <div class="content1" >
+            <article>
+                <H1>Our Headquarter</H1>
+            </article>
+            
+            <article class="img1">
+                <img src="img/jakarta.jpg" alt="gambar jakarta" style="border: 3px solid black;">
+                <img src="img/sura.jpg" alt="surabaya" style="border: 3px solid black;">
+                <img src="img/karta.jpg" alt="solo" style="border: 3px solid black;">     
+            </article>
+
+            <article class="table">
+                <table >
+                    <tr class="sub">
+                        <td style="padding: 0px 150px 0px 0px;">JAKARTA</td>
+                        <td style="padding: 0px 100px 0px 100px;">SURABAYA</td>
+                        <td style="padding: 0px 0px 0px 150px;">SURAKARTA</td>
+                    </tr>
+                </table>
+
+
+                <!-- <h2 style="margin-left: 50px;">Jakarta</h2>
+                <h2 style="margin-left: 260px;">Surabaya</h2>
+                <h2 style="margin-left: 300px;">Surakarta</h2> -->
+            </article>
+        </div>
+
+
+        <div class="content2">
+            <h2>Message Us..</h2>
+            
+            <div class="message1">
+                <div class="forminput">
+                    <form name="message-form" 
+                    onsubmit="return validateForm()">
+                        <table class="form1" cellspacing="2" cellpadding="7" style="text-align: justify; border-collapse: collapse; ">
+                            <tr class="form1" >
+                                <td class="form1" >Nama: 
+                                </td>
+                                <td class="form1" ><input placeholder="Nama" type="text" name="full-name" style="display: flex; width: 100%;"/>
+                                </td>
+                            </tr>
+                            <tr class="form1" >
+                                <td class="form1" >Tanggal lahir:
+                                </td>
+                                <td class="form1" > <input type="date" name="birth-date" style="display: flex; width: 100%;"/>
+                                </td>
+                            </tr>
+                            <tr class="form1" >
+                                <td class="form1">Gender:</td>
+                                <td style="text-align: center;">
+                                    <input type="radio" id="male" name="gender" value="male" />
+                                    <label for="male">male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">female</label>
+                                </td>
+                            </tr>
+                            <tr class="form1" >
+                                <td class="form1"  >Pesan :
+                                </td>
+                                <td class="form1"  style="text-align: center;" >
+                                
+                                <textarea placeholder="Pesan" name="messages" style="display: flex; width: 100%;"></textarea>
+                            </td>
+                            </tr>
+                            <tr class="form1" >
+                                <td class="form1" colspan="2" style="text-align: center;"><input type="submit" value="submit" style="padding-left: 30%; padding-right: 30%;">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                
+                    
+                </div>
+                <div class="formoutput">
+                        <p>Nama             : <span id="sender-full-name"></span></p>
+                        <p>Tanggal lahir    : <span id="sender-birth-date"></span></p>
+                        <p>Gender           : <span id="sender-gender"></span></p> 
+                        <p>Pesan            : <span id="sender-messages"></span></p>
+                </div>
+            </div>
+                
+                
+        </div>            
+    </main>
+
+    <footer>
+        <p>created by Haryo Mukti Wibowo</p>
+        <p>Website ini adalah tugas mini project dari RevoU fundamental course</p>
+    </footer>
+
 </body>
 </html>
+
+
+
+<!-- tidak jadi dipakai -->
+<!-- <div>
+    <form name="message-form" 
+    onsubmit="return validateForm()">
+
+        Nama: <input placeholder="Nama" type="text" name="full-name" />
+        <br />
+        
+        Tanggal lahir:
+        <input type="date" name="birth-date" />
+        <br />
+        
+        Gender :
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+        <br />
+        
+        Pesan :
+        <textarea placeholder="Pesan" name="messages"></textarea>
+        <br />
+        
+        <input type="submit" value="submit">
+    </form>
+</div> -->

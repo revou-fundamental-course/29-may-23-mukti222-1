@@ -1,0 +1,156 @@
+
+
+header, main, footer{
+    font-family: Calibri;
+}
+
+
+header{ background-color: rgb(16, 149, 149);
+margin: -10px;
+height: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: sticky;
+top: 0;
+opacity: 90%;
+}
+
+
+
+.logo{
+/* width: 35%; */
+width: 15%;
+margin: 10px;
+margin-left: 15px;
+background-color: aqua;
+border-radius: 50px;
+border: 3px solid black;
+}
+
+ul{
+display: flex;
+justify-content: right;
+align-items: center;
+list-style-type: none;
+margin-right: 10vh;
+}
+
+li {
+font-size: 140%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: -1px;
+border: 2px solid black;
+padding: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    background-color: gold;
+    padding: 2%;
+    transition-delay: 0.2s;
+    transition: .2s ease-in-out;
+}
+
+li:active{
+    padding: 1.5%;
+}
+
+
+.content1{
+background-color: rgb(255, 181, 131);
+margin-top: 0px;
+text-align: center;
+font-size: 120%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.content1 h1{order: 1;}
+.content1 article{order: 2;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.content1 h2{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.content1 img{
+width: 20%;
+margin: 30px;
+}
+
+
+
+.img1 img{
+border-radius: 50%;
+}
+
+.table{
+margin-top: -30px;
+margin-bottom: 20px;
+}
+
+.sub{
+font-weight: 800;
+}
+
+table, th, td {
+border: 0px solid black;
+}
+
+.form1 {
+border: 2px solid black;
+}
+
+.content2 {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.message1{
+flex: 1;
+margin: 5%;
+font-size: 170%;
+display: flex;
+
+}
+
+.forminput{
+padding-left:20px ;
+padding-right: 20px;
+}
+
+.formoutput{
+padding-left:20px ;
+padding-right: 20px;
+}
+
+footer{
+    background-color: rgb(25, 167, 167);
+    height: 7.5vh;
+    padding: 20px;
+    margin: -5px;
+}
+
+footer p{
+    line-height: 0px;
+}
+
+
+
+

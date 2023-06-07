@@ -1,0 +1,30 @@
+body{margin: 4px;
+    background-color: rgb(64, 174, 128);
+}
+
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(49, 216, 147);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.main{
+    background-color: rgb(47, 201, 137); 
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.vm
+{ background-color: rgb(44, 185, 126); 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;}
+
+h2, p{
+    margin: 20px;
+}
+
+h2{    padding: 10px;}
