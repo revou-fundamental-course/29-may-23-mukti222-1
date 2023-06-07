@@ -34,9 +34,9 @@ background-size: cover;
         <div style="width: 80%; background-color: rgb(16, 149, 149);">
             <ul>
                 <li style="border-radius: 5px 0px 0px 5px;"><a href="">Home</a></li>
-                <li ><a href="profile.html">Our Profile</a></li>
+                <li ><a href="profile.html">Our_Profile</a></li>
                 <li >Portofolio</li>
-                <li style="border-radius: 0px 5px 5px 0px;">Message Us</li>
+                <li style="border-radius: 0px 5px 5px 0px;">Message_Us</li>
             </ul>
         </div>
     </header>
@@ -58,29 +58,26 @@ background-size: cover;
             </article>
             
             <article class="img1">
-                <img src="img/jakarta.jpg" alt="gambar jakarta" style="border: 3px solid black;">
-                <img src="img/sura.jpg" alt="surabaya" style="border: 3px solid black;">
-                <img src="img/karta.jpg" alt="solo" style="border: 3px solid black;">     
-            </article>
-
-            <article class="table">
-                <table >
-                    <tr class="sub">
-                        <td style="padding: 0px 150px 0px 0px;">JAKARTA</td>
-                        <td style="padding: 0px 100px 0px 100px;">SURABAYA</td>
-                        <td style="padding: 0px 0px 0px 150px;">SURAKARTA</td>
-                    </tr>
-                </table>
-
-
-                <!-- <h2 style="margin-left: 50px;">Jakarta</h2>
-                <h2 style="margin-left: 260px;">Surabaya</h2>
-                <h2 style="margin-left: 300px;">Surakarta</h2> -->
+                <figure>
+                    <img src="img/jakarta.jpg" alt="gambar jakarta" style="border: 3px solid black;"
+                    class="img2">
+                    <figcaption>Jakarta</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/sura.jpg" alt="surabaya" style="border: 3px solid black;"
+                    class="img2">
+                    <figcaption>Surabaya</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/karta.jpg" alt="solo" style="border: 3px solid black;"
+                    class="img2">
+                    <figcaption>Solo</figcaption>
+                </figure>
             </article>
         </div>
 
 
-        <div class="content2">
+        <div class="content2" style="display: flex;" style="justify-content:space-around">
             <h2>Message Us..</h2>
             
             <div class="message1">
@@ -123,18 +120,15 @@ background-size: cover;
                             </tr>
                         </table>
                     </form>
-                
-                    
-                </div>
+ 
+                </div class="kanan" >
                 <div class="formoutput">
                         <p>Nama             : <span id="sender-full-name"></span></p>
                         <p>Tanggal lahir    : <span id="sender-birth-date"></span></p>
                         <p>Gender           : <span id="sender-gender"></span></p> 
                         <p>Pesan            : <span id="sender-messages"></span></p>
                 </div>
-            </div>
-                
-                
+            </div>  
         </div>            
     </main>
 
